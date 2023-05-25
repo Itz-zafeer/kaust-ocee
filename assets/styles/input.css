@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Rotis SemiSans Std;
+    src: url(../fonts/RotisSemiSansStd-Light.otf);
+    font-weight: 300;
+    display: block;
+}
+@font-face {
+    font-family: Rotis SemiSans Std;
+    src: url(../fonts/RotisSemiSansStd-Regular.otf);
+    font-weight: 400;
+    display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: Rotis SemiSans Std;
+    color: #FFFFFF;
+}
+
+@layer components{
+
+    .myContainer1640{
+        @apply md:w-[85.4166666667vw] mx-auto
+    }
+    .myContainer1100{
+        @apply md:w-[57.2916666667vw] mx-auto
+    }
+    .ltr .myContainer1780{
+        @apply md:w-[92.7083333333vw] ml-[auto]
+    }
+    .rtl .myContainer1780{
+        @apply md:w-[92.7083333333vw] mr-[auto]
+    }
+
+.heading{
+    @apply md:text-[3.33333333333vw] md:leading-[3.85416666667vw]
+}
+.heading20{
+    @apply md:text-[1.04166666667vw] md:leading-[1.25vw]
+}
+.heading32{
+    @apply md:text-[1.66666666667vw] md:leading-[1.97916666667vw]
+}
+.heading40{
+    @apply md:text-[2.08333333333vw] md:leading-[2.5vw]
+}
+
+
+ .paragraph{
+    @apply md:text-[1.25vw] md:leading-[1.77083333333vw]
+    md:tracking-[0.0625vw] font-[300]
+ }
+ .text16{
+    @apply md:text-[0.83333333333vw]  md:leading-[0.98958333333vw]
+    md:tracking-[0.04166666666vw] font-[300]
+ }
+ .text18{
+    @apply md:text-[0.9375vw]  md:leading-[1.25vw]
+    md:tracking-[0.046875vw] font-[300]
+ }
+
+ .text26{
+    @apply md:text-[1.35416666667vw]  md:leading-[1.5625vw]
+    text-[#E87424]
+ }
+
+
+ .ExploreMore{
+    @apply paragraph font-[400] border-[1px] border-[#FFFFFF]
+    md:w-[11.71875vw] text-center md:py-[0.75520833333vw]
+    transition-all duration-500 hover:border-[#004E59]
+    hover:bg-[#004E59] cursor-pointer
+ }
+ .numbers__Wrapper{
+    @apply flex flex-col md:gap-y-[0.625vw]
+ }
+
+ .image__Wrapper{
+    @apply md:w-[43.2291666667vw] relative   cursor-pointer
+ }
+ .image__Wrapper span{
+    @apply absolute w-0 bottom-0 leftRightFixer1 md:h-[0.3125vw] bg-[#E87424]
+    transition-all duration-500  
+ }
+ .image__Wrapper img{
+    @apply w-full
+ }
+ .image__Wrapper:hover span{
+    width: 100%;
+ }
+
+
+ .news__Card{
+    @apply  relative md:w-[19.4791666667vw]  after:content-[''] after:absolute after:bottom-[0] after:leftRightFixer1
+    after:w-full after:md:h-[20.8854166667vw] cursor-pointer
+
+ }
+ .news__Card::after{
+background:linear-gradient(180deg, rgba(0,0,0,0) 5%, rgb(0, 0, 0,1.3) 100%);
+
+ }
+
+ .news__Card .line{
+    @apply absolute w-0 bottom-0 leftRightFixer1 md:h-[0.3125vw] bg-[#E87424]
+    transition-all duration-500  z-[2] 
+ }
+ .news__Card:hover .line{
+    width: 100%;
+ }
+ 
+ .news__Card .Content{
+    @apply absolute bottom-0 z-[2] md:pb-[1.66666666667vw]
+ }
+ .news__Card .smallCardContent{
+    @apply md:w-[15.9375vw]
+ }
+
+ .programs__Eventscard{
+    @apply md:w-[25vw]  cursor-pointer
+ }
+ .programs__Eventscard .Content{
+    @apply  flex md:gap-y-[0.83333333333vw]
+    flex-col md:pt-[1.66666666667vw]
+    
+ }
+ .programs__Eventscard .img span{
+    @apply  absolute w-0 bottom-0 leftRightFixer1 md:h-[0.3125vw] bg-[#E87424]
+    transition-all duration-500  z-[2]  
+ }
+ .programs__Eventscard:hover .img span{
+    width: 100%;
+ }
+
+
+.ltr .news__Card .Content{
+    @apply md:left-[1.66666666667vw]
+ }
+.rtl .news__Card .Content{
+    @apply md:right-[1.66666666667vw]
+ }
+
+ .read__More{
+    @apply paragraph font-[400]
+    flex items-center md:gap-x-[1.97916666667vw]
+     
+ }
+ .read__More img{
+    @apply md:w-[0.52083333333vw]  transform
+    transition-all duration-500 flipped
+ }
+ .ltr .read__More:hover img{
+    @apply md:translate-x-[1.35416666667vw]
+ }
+ .rtl .read__More:hover img{
+    @apply md:translate-x-[-1.35416666667vw]
+ }
+
+    .header__Container{
+        @apply md:w-[93.75vw] mx-[auto]
+    }
+    .Links{
+        @apply md:text-[1.14583333333vw] md:leading-[1.77083333333vw] font-[400]
+        md:tracking-[0.05729166666vw]
+     }
+    .ltr .header__Contact{
+        @apply  pr-[1.25vw] after:content-[''] after:bg-[#FFFFFF] after:w-[1px] after:md:h-[1.04166666667vw]
+        after:absolute after:right-[0] after:top-[50%] transform after:translate-y-[-50%]
+    }
+    .rtl .header__Contact{
+        @apply  pl-[1.25vw] after:content-[''] after:bg-[#FFFFFF] after:w-[1px] after:md:h-[1.04166666667vw]
+        after:absolute after:left-[0] after:top-[50%] transform after:translate-y-[-50%]
+    }
+    .ltr .header__Arabic{
+        @apply  pl-[1.25vw] after:content-[''] after:bg-[#FFFFFF] after:w-[1px] after:md:h-[1.04166666667vw]
+        after:absolute after:left-[0] after:top-[50%] transform after:translate-y-[-50%]
+    }
+    .rtl .header__Arabic{
+        @apply  pr-[1.25vw] after:content-[''] after:bg-[#FFFFFF] after:w-[1px] after:md:h-[1.04166666667vw]
+        after:absolute after:right-[0] after:top-[50%] transform after:translate-y-[-50%]
+    }
+    
+
+    .ltr .leftRightFixer1{
+        @apply left-0
+    }
+    .rtl .leftRightFixer1{
+        @apply right-0
+    }
+    .ltr .leftRightFixer2{
+        @apply right-0
+
+    }
+    .rtl .leftRightFixer2{
+        @apply left-0
+
+    }
+   .rtl .flipped{
+        @apply transform scale-x-[-1]
+    }
+    
+}
+
+
+.Links li a{
+    transition: all .5s;
+   
+}
+
+ 
+.Links li:hover a{
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+ 
+.ExperienceOverlay1{
+
+    background: transparent linear-gradient(180deg, #004E59 0%, #004E59 25%, #004E59E6 37%, #004E5900 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+.ExperienceOverlay2{
+
+    background: transparent linear-gradient(359deg, #004E59 0%, #004E59 18%, #004E5900 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+.join__Cmoverlay{
+    background: transparent linear-gradient(359deg, #004E59 0%, #004E59 18%, #004E5900 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.possibility__Overlay{
+    background: transparent linear-gradient(180deg, #004E59 0%, #004E59 5%, #004E59B3 25%, #004E5961 56%, #004E5900 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.possibility__Overlay2{
+    background: transparent linear-gradient(2deg, #004E59 0%, #004E59 9%, #004E59BD 78%, #004E5900 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+ 
