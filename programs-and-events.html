@@ -9,10 +9,22 @@
     <title>Programs And Events</title>
 </head>
 
-<body>
+<body class="relative">
+    <div class="absolute top-0 leftRightFixer1 w-full h-full  z-[2]
+    overflow-hidden">
+        <div class="full__PageOverlay absolute md:top-[8.02083333333vw] 
+        md:w-[183.333333333vw] md:h-[183.333333333vw]">
+
+        </div>
+        <div class="leftRightFixer3 full__PageOverlay2 absolute md:top-[121.197916667vw] 
+        md:w-[183.333333333vw] md:h-[183.333333333vw]">
+
+        </div>
+         
+    </div>
     <header class="md:pt-[2.1875vw] absolute w-full z-[2] text-[#FFFFFF]">
         <div class="header__Container flex justify-between ">
-            <div class="md:w-[28.90625vw]">
+            <div class="md:w-[28.90625vw] flipped">
                 <a href="">
                     <img src="./assets/images/logo.svg" alt="logo">
                 </a>
@@ -56,24 +68,21 @@
     </header>
     <main>
         <section class="relative">
-            <div class="absolute top-0 leftRightFixer1 w-full h-full">
-
-                <div class=" absolute leftRightFixer1 top-0 md:w-full md:h-[17.1875vw]">
-                    <img src="./assets/images/home/hero/top.png" alt="" class="w-full h-full">
-                </div>
-                <div class=" absolute leftRightFixer1 top-[0.05208333333vw] md:h-[42.2395833333vw] md:w-full">
-                    <img src="./assets/images/home/hero/center.png" alt="" class="w-full h-full">
+            <div class="absolute w-full h-full top-0 leftRightFixer1">
+                <div class="blur-[0.52083333333vw] hero__Overlay1 absolute w-full md:h-[17.1875vw] top-0 leftRightFixer1">
 
                 </div>
-                <div class=" absolute leftRightFixer1 top-0 md:w-full md:h-full">
-                    <img src="./assets/images/home/hero/bottom-left.png" alt="" class="w-full h-full">
+                <div class="blur-[0.52083333333vw] hero__Overlay2 absolute w-[54.1666666667vw] md:h-[17.1875vw] leftRightFixer2 top-0">
 
                 </div>
-                <!-- <div class="absolute leftRightFixer1 top-0 w-full h-full ">
-            <img src="" alt="heroimg"
-            class="w-full h-full">
-        </div> -->
+                <div class="hero__Overlay3 absolute w-full h-[40.8854166667vw] bottom-0 leftRightFixer1">
 
+                </div>
+                <div class="absolute top-0 leftRightFixer1
+                w-full h-full z-[-1]">
+                    <video src="./assets/videos/hero.mp4" autoplay="" loop="" muted="" alt="heroVideo" 
+                    class="w-full h-full object-cover flipped"></video>
+                </div>
             </div>
             <div class="md:h-[42.2395833333vw] w-full relative overflow-hidden flex items-end
             md:pb-[2.34375vw]">
@@ -81,10 +90,10 @@
                 <div class="myContainer1640">
                     <div class="flex items-center md:gap-x-[0.83333333333vw]">
                         <a href="">
-                            <img src="./assets/images/icons/home.svg" alt="home" class="md:w-[1.25vw]">
+                            <img src="./assets/images/icons/home.svg" alt="home" class="md:w-[1.25vw] flipped">
                         </a>
                         <img src="./assets/images/icons/right-chevron.svg" alt="right-chevron"
-                            class="md:w-[0.36458333333vw]">
+                            class="md:w-[0.36458333333vw] flipped">
                     </div>
                     <div class="relative z-[2] md:w-[43.1770833333vw]
                 text-[#FFFFFF] flex flex-col md:gap-y-[1.77083333333vw]
@@ -99,17 +108,33 @@
                 
             </div>
         </section>
-        <div class="absolute w-full md:h-[2835px] z-[1]">
-            <img src="./assets/images/home/Mask Group 212  full.png" alt="" class="w-full h-full">
-        </div>
-        <section class=" relative">
-            <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[0] md:w-full h-[57.5vw]
+         
+        <section class=" ">
+            <div class="relative">
+                <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[0] md:w-full h-[57.5vw]
             z-[-1]">
 
             </div>
-            <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[0] md:w-full h-[1226px]
+            <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[0] md:w-full h-[63.8541666667vw]
             z-[-1]">
 
+            </div>
+            <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[57.5vw] md:w-full h-[57.5vw]
+            z-[-1]">
+
+            </div>
+            <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[63.8541666667vw] md:w-full h-[63.8541666667vw]
+            z-[-1]">
+
+            </div>
+            <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[126.760416667vw] md:w-full h-[35.0520833333vw]
+            z-[-1]">
+
+            </div>
+            <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[131.181770833vw] md:w-full h-[30.5729166667vw]
+            z-[-1]">
+
+            </div>
             </div>
 
 
@@ -206,7 +231,7 @@
             <div class=" myContainer1640 flex md:gap-x-[10.2083333333vw]">
                 <div class="md:w-[21.3541666667vw]">
                     <a href="">
-                        <img src="./assets/images/footer-logo.png" alt="footer-logo" class="">
+                        <img src="./assets/images/footer-logo.png" alt="footer-logo" class="flipped">
                     </a>
                     <p class="text18 md:mt-[1.40625vw]">Lorem ipsum dolor sit amet, consetetur sadiing elitr, sed
                         diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>

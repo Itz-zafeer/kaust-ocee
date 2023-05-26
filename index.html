@@ -9,10 +9,26 @@
     <title>Home</title>
 </head>
 
-<body>
+<body class="relative">
+    <div class="absolute top-0 leftRightFixer1 w-full h-full  z-[2]
+    overflow-hidden">
+        <div class="full__PageOverlay absolute md:top-[8.02083333333vw] 
+        md:w-[183.333333333vw] md:h-[183.333333333vw]">
+
+        </div>
+        <div class="leftRightFixer1 full__PageOverlay2 absolute md:top-[121.197916667vw] 
+        md:w-[183.333333333vw] md:h-[183.333333333vw]">
+
+        </div>
+        <div class="full__PageOverlay absolute md:top-[242.708333333vw] 
+     md:w-[183.333333333vw] md:h-[183.333333333vw]">
+
+        </div>
+    </div>
+
     <header class="md:pt-[2.1875vw] absolute w-full z-[2] text-[#FFFFFF]">
         <div class="header__Container flex justify-between ">
-            <div class="md:w-[28.90625vw]">
+            <div class="md:w-[28.90625vw] flipped">
                 <a href="">
                     <img src="./assets/images/logo.svg" alt="logo">
                 </a>
@@ -56,25 +72,27 @@
     </header>
     <main>
         <section class="relative">
-            <div class="absolute top-0 leftRightFixer1 w-full h-full">
 
-                <div class=" absolute leftRightFixer1 top-0 md:w-full md:h-[17.1875vw]">
-                    <img src="./assets/images/home/hero/top.png" alt="" class="w-full h-full">
-                </div>
-                <div class=" absolute leftRightFixer1 top-[17.1875vw] md:w-full">
-                    <img src="./assets/images/home/hero/center.png" alt="" class="w-full h-full">
+
+            <div class="absolute w-full h-full top-0 leftRightFixer1">
+                <div
+                    class="blur-[0.52083333333vw] hero__Overlay1 absolute w-full md:h-[17.1875vw] top-0 leftRightFixer1">
 
                 </div>
-                <div class=" absolute leftRightFixer1 top-0 md:w-full md:h-full">
-                    <img src="./assets/images/home/hero/bottom-left.png" alt="" class="w-full h-full">
+                <div
+                    class="blur-[0.52083333333vw] hero__Overlay2 absolute w-[54.1666666667vw] md:h-[17.1875vw] right-0 top-0">
 
                 </div>
-                <!-- <div class="absolute leftRightFixer1 top-0 w-full h-full ">
-            <img src="" alt="heroimg"
-            class="w-full h-full">
-        </div> -->
+                <div class="hero__Overlay3 absolute w-full h-[40.8854166667vw] bottom-0 leftRightFixer1">
 
+                </div>
+                <div class="absolute top-0 leftRightFixer1
+                w-full h-full z-[-1]">
+                    <video src="./assets/videos/hero.mp4" autoplay loop muted alt="heroVideo"
+                        class="w-full h-full object-cover flipped"></video>
+                </div>
             </div>
+
             <div class="h-[100svh] w-full relative overflow-hidden flex items-end
             md:pb-[13.28125vw]">
 
@@ -94,7 +112,7 @@
                     </div>
                 </div>
                 <div class="absolute md:bottom-[2.08333333333vw] transform left-[50%] translate-x-[-50%]
-                md:w-[2.60416666667vw] cursor-pointer" onclick="scrollDown()">
+                md:w-[2.60416666667vw] cursor-pointer z-[2]" onclick="scrollDown()">
                     <lottie-player src="./assets/json/scroll.json" background="transparent" speed="1" class="" loop=""
                         autoplay="">
 
@@ -102,17 +120,49 @@
                 </div>
             </div>
         </section>
-        <div class="absolute w-full md:h-[298.697916667vw] z-[1]">
-            <img src="./assets/images/home/Mask Group 212  full.png" alt="" class="w-full h-full">
-        </div>
+
         <section class=" relative">
-            <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[0] md:w-full h-[57.5vw]
+            <div class="relative">
+                <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[0] md:w-full h-[57.5vw]
             z-[-1]">
 
-            </div>
-            <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[0] md:w-full h-[1226px]
+                </div>
+                <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[0] md:w-full h-[63.8541666667vw]
             z-[-1]">
 
+                </div>
+                <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[57.5vw] md:w-full h-[57.5vw]
+            z-[-1]">
+
+                </div>
+                <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[63.8541666667vw] md:w-full h-[63.8541666667vw]
+            z-[-1]">
+
+                </div>
+                <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[126.760416667vw] md:w-full h-[57.5vw]
+            z-[-1]">
+
+                </div>
+                <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[131.181770833vw] md:w-full h-[63.8541666667vw]
+            z-[-1]">
+
+                </div>
+                <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[184.260416667vw] md:w-full h-[63.4895833333vw]
+            z-[-1]">
+
+                </div>
+                <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[155.035937vw] md:w-full h-[77.03125vw]
+            z-[-1]">
+
+                </div>
+                <div class="ExperienceOverlay1 absolute leftRightFixer1 top-[261.760416667vw] md:w-full h-[36.5vw]
+            z-[1]">
+
+                </div>
+                <div class="ExperienceOverlay2 absolute leftRightFixer1 top-[258.890104167vw] md:w-full h-[39.854167vw]
+            z-[1]">
+
+                </div>
             </div>
 
 
@@ -136,13 +186,10 @@
         </section>
         <section>
             <div class="relative">
-                <div class="join__Cmoverlay w-full md:h-[65.9375vw] absolute
-                leftRightFixer1 md:top-[2.55208333333vw]">
 
-                </div>
-                <div class="w-full md:h-[1510px] absolute
+                <div class="w-full md:h-[78.6458333333vw] absolute
                 leftRightFixer1 md:top-[-10.1041666667vw]">
-                    <img src="./assets/images/home/Group 88793.jpg" alt="" class="w-full h-full">
+                    <img src="./assets/images/home/Group 88793.jpg" alt="" class="w-full h-full flipped">
                 </div>
             </div>
             <div class="relative z-[2] md:pt-[17.2395833333vw]">
@@ -160,16 +207,29 @@
                 <div class="myContainer1780">
                     <div class="flex items-center justify-between md:pt-[15.2604166667vw]
                     md:pb-[9.375vw]">
-                        <div class="md:w-[39.1145833333vw] flex flex-col md:gap-y-[2.08333333333vw]">
+                        <div class="md:w-[39.1145833333vw] flex flex-col md:gap-y-[2.21354166667vw]">
                             <h4 class="heading">Office Of Culture, Enrichment And Engagement</h4>
                             <p class="paragraph md:w-[37.8645833333vw]">Every offering that we deliver, from a
                                 large-scale event for 1000s to an intimate occasion for a select audience, provides to
                                 impactful experience that enriches, inspires and ignites curiosity</p>
-                            <div class="md:mt-[2.08333333333vw] flex items-center
-        md:w-[26.1979166667vw] flex-wrap md:gap-x-[9.11458333333vw]">
+                            <div class="md:mt-[1.04166666667vw] flex items-center
+                                 md:w-[26.875vw] flex-wrap md:gap-x-[8.59375vw]
+                                 md:gap-y-[3.125vw]">
                                 <div class="numbers__Wrapper">
-                                    <span class="">1960</span>
+                                    <span class="heading font-[700]">+1560</span>
                                     <span class="text26">Speakers</span>
+                                </div>
+                                <div class="numbers__Wrapper">
+                                    <span class="heading font-[700]">+1560</span>
+                                    <span class="text26">Vistors</span>
+                                </div>
+                                <div class="numbers__Wrapper">
+                                    <span class="heading font-[700]">+1560</span>
+                                    <span class="text26">Students</span>
+                                </div>
+                                <div class="numbers__Wrapper">
+                                    <span class="heading font-[700]">+1560</span>
+                                    <span class="text26">Events</span>
                                 </div>
                             </div>
                         </div>
@@ -260,17 +320,11 @@
         </section>
         <section>
             <div class="relative">
-                <div class="  absolute top-[77px] leftRightFixer1 w-full h-[810px]">
-                    <img src="./assets/images/home/Group 88794.jpg" alt=""
-                    class="w-full h-full">
+                <div class="  absolute top-[4.01041666667vw] leftRightFixer1 w-full h-[42.1875vw]">
+                    <img src="./assets/images/home/Group 88794.jpg" alt="" class="w-full h-full flipped">
                 </div>
-                <div class="possibility__Overlay  absolute top-[77px] leftRightFixer1 w-full h-[810px]">
-                     
-                </div>
-                <div class="possibility__Overlay2  absolute top-[518px] leftRightFixer1 w-full h-[369px]">
-                     
-                </div>
-                 
+
+
             </div>
             <div class="relative z-[2]">
                 <div class=" md:w-[46.5104166667vw] mx-[auto]  md:py-[15.3125vw]
@@ -289,9 +343,12 @@
                         <p class="paragraph md:min-w-[28.3333333333vw]">Stay up to date with our latest events and
                             programs</p>
                     </div>
-                    <div class="flex justify-between items-center
-                    md:pt-[3.38541666667vw] md:pb-[4.16666666667vw]">
-                        <div class="md:w-[37.65625vw]">
+                    <div class="flex justify-between items-stretch
+                    md:pt-[3.38541666667vw] md:pb-[4.16666666667vw]
+                    ">
+                        <div class="md:w-[37.65625vw]
+                        bg-[#FFFFFF] bg-opacity-[0.1]
+                        md:px-[2vw]">
 
                             <input type="text" class="w-full bg-transparent outline-none h-full">
                         </div>
@@ -308,7 +365,7 @@
             <div class=" myContainer1640 flex md:gap-x-[10.2083333333vw]">
                 <div class="md:w-[21.3541666667vw]">
                     <a href="">
-                        <img src="./assets/images/footer-logo.png" alt="footer-logo" class="">
+                        <img src="./assets/images/footer-logo.png" alt="footer-logo" class="flipped">
                     </a>
                     <p class="text18 md:mt-[1.40625vw]">Lorem ipsum dolor sit amet, consetetur sadiing elitr, sed
                         diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
